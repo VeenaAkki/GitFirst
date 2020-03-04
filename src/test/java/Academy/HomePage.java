@@ -36,6 +36,8 @@ public class HomePage extends base{
 		driver.get(prop.getProperty("url"));
 		LandingPage l=new LandingPage(driver);
 		l.getLogin().click(); //driver.findElement(By.css()
+		System.out.println("hello");
+		System.out.println("i am updating for git");
 		LoginPage lp=new LoginPage(driver);
 		lp.getEmail().sendKeys(Username);
 		lp.getPassword().sendKeys(Password);
